@@ -1,0 +1,22 @@
+/*  grid-row:grid-row-start/grid-row-end  */
+body{
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.alignitems{
+    display: grid ;
+    grid-auto-rows:minmax(200px,auto) ;
+    grid-template-columns:repeat(3,33%);
+    grid-gap: 10px 20px;
+    align-items:center;
+}
+.alignitems >.item{
+    padding: 30px;
+    background-color: aqua;
+    color: red;
+    margin:5px 0;
+}

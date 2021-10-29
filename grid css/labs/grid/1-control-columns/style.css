@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-con{
+display: grid ;
+/*grid-template-columns:33% 33% 34%;*/
+
+    /*grid-template-columns:repeat(3,33%);*/
+    /*grid-template-columns:1fr 1fr 1fr;*/
+    grid-template-columns:repeat(3,1fr);
+}
+.grid-con >.item{
+    padding: 30px;
+    background-color: aqua;
+    color: red;
+    margin:5px 0;
+}

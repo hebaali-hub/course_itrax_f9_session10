@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-con{
+display: grid ;
+    grid-template-columns:repeat(3,33%);
+ /*grid-template-rows:200px 200px 400px;*/
+grid-auto-rows:minmax(200px,auto) ;
+
+    
+    /*grid-template-rows:1fr 1fr 1fr;*/
+    /*grid-template-rows:repeat(3,1fr);*/
+}
+.grid-con >.item{
+    padding: 30px;
+    background-color: aqua;
+    color: red;
+    margin:5px 0;
+}

@@ -1,0 +1,41 @@
+/*  grid-row:grid-row-start/grid-row-end  */
+body{
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gridarea{
+    display:grid ;
+    grid-gap: 5px;
+    grid-template-areas:
+    "head head head head"
+    "main main nava  nava"
+    "main main asid asid"
+    "main main asid asid"
+     "foot foot foot foot";
+}
+.gridarea > * {
+    padding: 30px;
+    background-color: aqua;
+    color: red;
+
+}
+header{
+    grid-area:head;
+}
+nav{
+    grid-area:nava;
+}
+main{
+    grid-area:main;
+}
+
+footer{
+    grid-area:foot;
+}
+aside{
+    grid-area: asid;
+}

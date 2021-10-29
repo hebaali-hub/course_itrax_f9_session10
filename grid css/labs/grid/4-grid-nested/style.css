@@ -1,0 +1,28 @@
+/* grid-gap:grid-row-gap grid-column-gap  */
+body{
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nested{
+    display: grid ;
+    grid-auto-rows:minmax(200px,auto) ;
+    grid-template-columns:repeat(3,33%);
+    grid-gap: 10px 20px;
+}
+.nested >.item{
+    padding: 30px;
+    background-color: aqua;
+    color: red;
+    margin:5px 0;
+}
+
+.itemsnested{
+    display: grid ;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:100px 200px 90px;
+    grid-gap: 1px 2px;
+}
